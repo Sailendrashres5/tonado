@@ -1,3 +1,6 @@
+body{
+  overflow: hidden;
+}
 .form-join
 {
     height: 400px;

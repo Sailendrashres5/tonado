@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (isset($_SESSION['user-logged-in'])) {
+  header('location:tonado.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,14 +16,14 @@
 </head>
 <body class="container">
     <header class="main-header">
-        <a href="/" class="brand-logo">
+        <a href="index.php" class="brand-logo">
             <div class="main-logo"></div>
         </a>
         <nav class="main-nav">
             <ul>
-                <li><div class="discover"><a href="discover.html">Discover</a></div></li>
+                <li><div class="discover"><a href="discover.php">Discover</a></div></li>
                 <div class="join">
-                    <li><a href="join.html">Join</a></li>
+                    <li><a href="join.php">Join</a></li>
                 </div>
             </ul>
         </nav>

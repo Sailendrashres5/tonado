@@ -22,22 +22,37 @@ body{
   min-height: 100vh;
   background: linear-gradient(179.62deg, rgba(3, 32, 47, 0.9) 37.64%, rgba(2, 11, 16, 0.94) 69.72%);
 }
+
+.items ul li{
+  color: white;
+  position: relative;
+  margin-left: 5px;
+  top: 150px;
+  padding: 10px;
+  font-size: 16px;
+  list-style: none;
+}
+.items ul li:hover{
+  color: grey;
+  cursor: pointer;
+}
+
 .button{
-    padding-left: 5px;
+    padding-left: 8px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-right:5px;
+    padding-right:8px;
     text-align: center;
-    color: white;
-    
     background: none;
     font: inherit;
-    color: var(--color);
     text-decoration: none;
 }
 .button a{
  text-decoration:none;
  color:white;
+}
+.button a:hover{
+ color:black;
 }
 .profile:hover {
   cursor: pointer;
@@ -296,4 +311,19 @@ ul li .audio-duration{
 ul li.playing{
   pointer-events: none;
   color: var(--black);
+}
+
+
+.display{
+position: absolute;
+    color: white;
+    font-size: 95px;
+    top: 235px;
+    left: 680px;
+    display: flex;
+    justify-content: space-between;
+}
+.style{
+  color: #FF1EED;
+  padding-left: 10px;
 }

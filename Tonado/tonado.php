@@ -1,10 +1,16 @@
+<?php
+session_start();
+if(!isset($_SESSION['user-logged-in'])){
+  header('location:login-page.php');
+}
+?>
+
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Player | CodingNepal</title>
+  <title>Music Player</title>
 <!--   <link rel="stylesheet" href="index.css">
  -->  <link rel="stylesheet" type="text/css" href="tonado.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -12,11 +18,25 @@
 <body>
   <div class="sidebar">
 	<header class="main-header">
-    <a href="/" class="brand-logo">
+    <a href="" class="brand-logo">
       <div class="main-logo"></div>
     </a>
+    <div class="profile">
+      <h3 class="button" > <a href="logout.php">Log out</a></h3>
+    </div>
+
  </header>
+ <div class="items">
+   <ul>
+     <li>Your Library</li>
+     <li>Liked Songs</li>
+     <li>Playlist</li>
+     <li>Artists</li>
+     <li>Albums</li>
+   </ul>
+ </div>
 </div>
+<div class="display">Have <p class="style">Fun</p></div>
   <div class="wrapper">
     <div class="song-bar">
       <div class="img-area">
@@ -57,15 +77,10 @@
         </ul>
       </div>
     </div>
-    <div class="volume">
-            <p id="volume_show">90</p>
-            <i class="progress-bar" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
-            <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">  
-         </div>
 </div>
 
-  <script src="js/music-list.js"></script>
-  <script src="js/script.js"></script>
+  <script src="music-list.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
