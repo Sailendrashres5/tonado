@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto/Roboto-Regular.ttf);
+}
+
+.main-logo{
+/* white 1 */
+
+
+position: absolute;
+left: 2.76%;
+right: 74.74%;
+top: 0%;
+bottom: 79.44%;
+}
+/*
+li:first-child{
+/* Discover 
+
+
+position: absolute;
+left: 75.78%;
+right: 16.59%;
+top: 6.2%;
+bottom: 88.8%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+*/
+/*
+.join{
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align: center;
+    
+    color: #FFFFFF;
+}
+*/
+.button{
+    position: absolute;
+    left: 83.44%;
+    right: 10.52%;
+    top: 6.2%;
+    bottom: 89.27%;
+    width: 96px;
+    height: 38px;
+    position: absolute;
+    left: 684px;
+    top: 475px;
+    border-radius: 11px;
+}
+.main-text{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   /* border:1px solid #FFFFFF;*/
+    align-self: center;
+    width: 770px;
+    height: 213px;
+    left: 346px;
+    top: 221px;
+}
+.title
+{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 120px;
+    display: flex;
+    color: #151515;
+    font-size: 70px;
+
+}
+.subtitle
+{
+
+font-family: inherit;
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 54px;
+
+align-items: stretch;
+text-align: center;
+justify-content: center;
+display: flex;
+color: #FFFFFF;
+margin-top: 254px;
+margin-left: 10px;
+}

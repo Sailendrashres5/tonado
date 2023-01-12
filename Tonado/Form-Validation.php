@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form Validation</title>
+    </head>
+    <body>
+
+        <form id="login"  action="login.php" method="post" onsubmit="event.preventDefault(); validateLogin();>
+            <input type = "text" placeholder = "Enter your email " name="email" id="email"/>
+            <br>
+            <input type="password" placeholder="Enter your password" name="password " id="password"/>
+            <br>
+            <input type="submit" name="login" value="login">
+        </form>
+        <script>
+            function validateLogin(){
+                var userName = document.getElementById('user_name').value;
+                var password = document.getElementById('password').value;
+                
+                if(userName.trim() == ''){
+                    alert('Username cannot be empty');
+                    return false;
+                }
+                if(password ==''){
+                    alert('Password field cannot be empty!');
+                    return false;
+                }else{
+                    if (password.length<8){
+                        alert('Then length of the password has to be almost 8 characters');
+                        return false;
+                    }
+                else{
+                    if (password.length>16) {
+                        alert('The password should not be more than 16 characters');
+                        return false;
+                    }
+                }
+                }
+                document.getElementById('login-form').submit();
+            }
+        </script>
+    </body>
+</html>
